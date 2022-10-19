@@ -1,0 +1,33 @@
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.get{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#del, #edit{
+    width: 42px;
+    height: 30px;
+}
+#del{
+    background-color: rgb(206, 67, 67);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+#edit{
+    background-color: rgb(51, 145, 51);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}

@@ -1,0 +1,14 @@
+.CreateTodo input{
+    width: 450px;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 30px;;
+}
+.CreateTodo button{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

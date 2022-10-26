@@ -1,10 +1,15 @@
 import css from './CreateTodo.module.css'
+import { useState } from 'react'
+const CreateTodo = (props) => {
 
-const CreateTodo = () => { 
+    const AddTodos = () => {
+       props.onAdd(props.id)
+    }
+
     return(
         <div className={css.CreateTodo}>
         <input type="text" placeholder="Enter todo here" />
-        <button>+Submit</button>
+        <button onClick={AddTodos}>+Submit</button>
         </div>
     )
 }

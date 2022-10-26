@@ -4,3 +4,10 @@
     margin: 150px auto;
     border-radius: 4px;
   }
+  .content_body{
+    margin-top: 10px;
+    border: 1px solid rgb(155, 152, 152); 
+  }
+  .content_body > div:nth-child(even){
+      background: rgb(220, 220, 220);
+  }

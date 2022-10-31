@@ -1,12 +1,6 @@
 import css from './Header.module.css'
-import { useState } from 'react'
+
 const Header = (props) => {
-
-const [num, setNum] = useState(0)
-const HandlePLus = () => {
-  setNum(Number(num + 1))
-}
-
 
     return(
         <div className={css.wrapper}>

@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    padding: 10px;
 }
 .get{
     width: 20%;
@@ -26,8 +27,23 @@
     border-radius: 5px;
     color: white;
 }
-.check{
+.item > div, .item > label{
     display: flex;
-    justify-content: space-evenly;
-    width: 30%;
+    align-items: center;
+    grid-gap: 5px;
+}
+.todoDone{
+    text-decoration: line-through;
+}
+.setEdit input{
+   width: 150px;
+   padding: 3px;
+}
+.setEdit button {
+    background-color: rgb(51, 134, 145);
+    border: none;
+    border-radius: 0px  5px 5px 0px;
+    color: white;
+    width: 42px;
+    height: 25px;
 }

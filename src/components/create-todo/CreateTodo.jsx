@@ -2,15 +2,22 @@ import css from './CreateTodo.module.css'
 import { useState } from 'react'
 const CreateTodo = (props) => {
 
-    const AddTodos = () => {
-       props.onAdd(props.id)
+    const [inpValue, setValue] = useState("")
+    const submit = (event) => {
+       event.preventDefault();
+
+       props.AddTodos(inpValue);
+       setValue("")
+    }
+    const handleInput = (event) =>{
+          setValue(event.target.value)
     }
 
     return(
-        <div className={css.CreateTodo}>
-        <input type="text" placeholder="Enter todo here" />
-        <button onClick={AddTodos}>+Submit</button>
-        </div>
+        <form onSubmit={submit} className={css.CreateTodo}>
+        <input type="text" value={inpValue} onChange={handleInput} placeholder="Enter todo here" />
+        <button>+Submit</button>
+        </form>
     )
 }
 
